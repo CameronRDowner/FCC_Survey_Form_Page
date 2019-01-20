@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC Survey Form </title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title" class="title">Sample Form</h1>
+<div id="form-outer">
+  
+  <p id="description">Please give us some additional information</p>
+  
+  <form id="survey-form" action="www.linktosendformdatato.com" method="GET">
+  
+    <div id="txt-name">
+<label class="labels" id="name-label" for="name">
+  * Name:</label>
+  <input id="name" type="text" name="text" placeholder="Enter your name" class="txt-field" required>
+    </div>
+    
+      <div id="txt-email">
+   <label for="email" id="email-label" class="labels">
+  * Email:</label> 
+  <input id="email" type="email" name="text" placeholder="Enter your email" class="txt-field" required>
+    </div>
+   
+    <div id="txt-age">
+   <label class="labels" id="number-label" for="number">
+  * Age:</label>
+  <input id="number" type="number" name="number" placeholder="Enter your age" min="1" max="100" class="txt-field" required> 
+    </div>
+    
+    <div id="ddm-occupation"> 
+    <label class="labels" for="dropdown"> Which option best describes your current occupation:</label>
+      <div class="alt-align">
+    <select id="dropdown" name="CurrentOccupation" class="dropdown">
+      <option disabled selected>Select an option</option>
+      <option value="FT-Student">Full Time Student</option>
+      <option value="FT-Job">Full Time Job</option>
+      <option value="Other">Other</option>
+      </select>
+      </div>
+    </div>
+    <label class="labels">How satisfied are you with our organization?</label>
+    <fieldset class="alt-align" style="border: 0">          
+        <label class="radio"><input type="radio" value="very-satisfied" name="radio-buttons" >Very Satisfied</label>
+          <label class="radio"><input type="radio" value="satisfied" name="radio-buttons">Satisfied</label>
+          <label class="radio"><input type="radio" value="neutral" name="radio-buttons">Neutral</label>
+          <label class="radio"><input  type="radio" value="unsatisfied" name="radio-buttons">Unsatisfied</label>
+          <label class="radio"><input  type="radio" value="very-unsatisfied" name="radio-buttons">Very Unsatisfied</label>
+          </fieldset>
+    <label class="labels">Which of our products interest you?<br> (Check all that apply)</label>
+    <fieldset style="border:0" class="alt-align">
+      <label class="checkbox"><input type="checkbox" value="power-supplies" name="checkboxes">Power Supplies</label>
+        <label class="checkbox"><input type="checkbox" value="motherboards" name="checkboxes">Motherboards</label>
+      <label class="checkbox"><input type="checkbox" value="memory" name="checkboxes">Memory</label>
+      <label class="checkbox"><input type="checkbox" value="video-cards" name="checkboxes">Video Cards</label>
+      <label class="checkbox"><input type="checkbox" value="processors" name="checkboxes">Processors</label>
+        </fieldset>
+    
+    <label class="labels" for="comments">Comments:</label>
+   <textarea id="comments" class="text-area" name="comment" placeholder="Enter any comments">
+        </textarea>
+    
+    <button id="submit" type="submit">Submit</button>
+    
+  </form>
+</div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
